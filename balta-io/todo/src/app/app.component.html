@@ -1,0 +1,22 @@
+<h1>{{ title }}</h1>
+<h4>Curso 7181 - Começando com Angular</h4>
+
+<ul>
+    <p *ngIf="todos.length==0"><small>Você não tem nenhuma tarefa hoje</small></p>
+    <li *ngFor="let todo of todos">{{todo.id}} {{todo.title}} -
+        <button (click)="markAsDone(todo)" *ngIf="!todo.done">Concluir</button> |
+        <button (click)="markAsUndone(todo)" *ngIf="todo.done">Refazer</button> |
+        <button (click)="remove(todo)">Remover</button>
+    </li>
+</ul>
+
+<!-- reactive form -->
+
+<form [formGroup]="form">
+    <fieldset>
+        <label>Tarefa</label>
+        <input type="text" placeholder="Título da Tarefa" maxlength="50" formControlName="title">
+        <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60 caracteres</small>
+        <button [disabled]="form.invalid" (click)="add()">Salvar</button>
+    </fieldset>
+</form>
