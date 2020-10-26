@@ -1,0 +1,27 @@
+{
+  "name": "angularjs-getstarted",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maurmann/angularjs-getstarted.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maurmann/angularjs-getstarted/issues"
+  },
+  "homepage": "https://github.com/maurmann/angularjs-getstarted#readme",
+  "dependencies": {
+    "angular": "^1.7.9",
+    "angular-route": "^1.7.9"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
