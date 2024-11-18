@@ -1,0 +1,52 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.page-content {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.main-menu-link-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-link {
+  vertical-align: middle;
+  margin-left: 6px;
+  font-size: small;
+}
+
+.menu-icon {
+  vertical-align: middle;
+}
+
+.app-sidenav {
+  min-width: 280px;
+}
+
+#sidenav_container {
+  top: 64px !important;
+}
+
+@media(max-width: 599px) {
+  #sidenav_container {
+    top: 56px !important;
+  }
+}
+
+.reduce-expansion-margin-top {
+  height: 0px;
+  margin-top: -20px;
+}
+
+.reduce-expansion-margin-bottom {
+  height: 0px;
+  margin-bottom: -20px;
+}
+
+.home-button {
+  width: 30em;
+  text-align: left;
+}
